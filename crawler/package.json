@@ -1,0 +1,26 @@
+{
+  "name": "gelato-crawler",
+  "version": "1.3.0",
+  "description": "Using Google Puppeter, Google Cloud Vision and S3 Upload",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/vision": "^0.25.0",
+    "aws-sdk": "^2.413.0",
+    "dotenv": "^6.2.0",
+    "fs": "0.0.1-security",
+    "log4js": "^4.0.2",
+    "mysql": "^2.16.0",
+    "mysql2": "^1.6.5",
+    "node-fetch": "^1.6.3",
+    "performance": "^1.1.1",
+    "puppeteer": "^1.8.0",
+    "sequelize": "^4.42.1",
+    "sequelize-cli": "^5.4.0",
+    "superagent": "^4.1.0"
+  }
+}

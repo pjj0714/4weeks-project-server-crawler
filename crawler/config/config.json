@@ -1,0 +1,72 @@
+{
+  "development": {
+    "dev": {
+      "username": "pjj1587",
+      "password": "1q2w3e4r",
+      "database": "gelatoDB",
+      "port": 3306,
+      "host": "gelatodb.caex0dcsyqqr.ap-northeast-2.rds.amazonaws.com",
+      "dialect": "mysql"
+    }
+  },
+  "production": {
+    "username": "root",
+    "password": null,
+    "database": "test",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+
+  "user": {
+    "username": "ace_pjj",
+    "password": "wnswo1"
+  },
+  "user2": {
+    "username": "wp1rndur@daum.net",
+    "password": "1q2w3e4r!"
+  },
+
+  "bitly": {
+    "token": "66a19dde8a2416409d62b734c5ef8eb5f2f1f438"
+  },
+  "log": {
+    "appenders": {
+      "console": {
+        "type": "stdout"
+      },
+      "errorFile": {
+        "type": "file",
+        "filename": "./log/errors.log"
+      },
+      "errors": {
+        "type": "logLevelFilter",
+        "level": "ERROR",
+        "appender": "errorFile",
+        "maxLogSize": 524288,
+        "backups": 10,
+        "compress": true
+      },
+      "userEndCursor": {
+        "type": "file",
+        "level": "INFO",
+        "filename": "./log/userEndcursor.log",
+        "maxLogSize": 524288,
+        "backups": 10,
+        "compress": true
+      },
+      "tagEndCursor": {
+        "type": "file",
+        "level": "INFO",
+        "filename": "./log/tagEndcursor.log",
+        "maxLogSize": 524288,
+        "backups": 10,
+        "compress": true
+      }
+    },
+    "categories": {
+      "default": { "appenders": ["errors", "console"], "level": "TRACE" },
+      "user": { "appenders": ["userEndCursor", "console"], "level": "INFO" },
+      "tag": { "appenders": ["tagEndCursor", "console"], "level": "INFO" }
+    }
+  }
+}
